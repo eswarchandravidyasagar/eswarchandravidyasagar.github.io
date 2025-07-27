@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
+// Temporarily comment out Google Fonts due to network issues
+// import { Inter } from "next/font/google";
+// const inter = Inter({
+//   subsets: ["latin"],
+//   variable: "--font-inter",
+// });
 
 export const metadata: Metadata = {
   title: "Eswar Chandra - Full Stack Developer & AI Enthusiast",
@@ -20,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} font-sans antialiased`}
+        className="font-sans antialiased"
       >
         {children}
       </body>
