@@ -1,6 +1,5 @@
 'use client';
 import { Project } from '@/data/projects';
-import { useState } from 'react';
 
 interface ProjectCardProps {
   project: Project;
@@ -50,13 +49,9 @@ const categoryIcons = {
 };
 
 export default function ProjectCard({ project }: ProjectCardProps) {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
     <div
       className="project-card glass rounded-xl p-6 relative overflow-hidden group cursor-pointer"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
     >
       {/* Animated Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

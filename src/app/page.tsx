@@ -184,7 +184,7 @@ export default function Home() {
             <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto rounded-full mb-12" />
             
             <p className="text-slate-300 text-lg mb-12 max-w-2xl mx-auto">
-              Let's collaborate on your next project or discuss how we can work together to bring your ideas to life.
+              Let&apos;s collaborate on your next project or discuss how we can work together to bring your ideas to life.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
