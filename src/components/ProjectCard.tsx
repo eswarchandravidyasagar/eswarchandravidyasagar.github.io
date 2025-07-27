@@ -20,11 +20,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <h3 className="text-xl font-semibold text-white group-hover:text-blue-300 transition-colors">
           {project.title}
         </h3>
-        {project.featured && (
-          <span className="px-2 py-1 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs rounded-full">
-            Featured
-          </span>
-        )}
+        <div className="flex gap-2">
+          {project.featured && (
+            <span className="px-2 py-1 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs rounded-full">
+              Featured
+            </span>
+          )}
+        </div>
       </div>
       
       <p className="text-slate-300 mb-4 leading-relaxed">
