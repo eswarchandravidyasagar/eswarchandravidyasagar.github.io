@@ -14,11 +14,10 @@ interface Particle {
 }
 
 const colors = [
-  'rgba(99, 102, 241, 0.6)',   // Indigo
-  'rgba(139, 92, 246, 0.6)',   // Purple
-  'rgba(236, 72, 153, 0.6)',   // Pink
-  'rgba(59, 130, 246, 0.6)',   // Blue
-  'rgba(16, 185, 129, 0.6)',   // Emerald
+  'rgba(148, 163, 184, 0.1)',   // Slate light
+  'rgba(100, 116, 139, 0.1)',   // Slate medium
+  'rgba(71, 85, 105, 0.1)',     // Slate dark
+  'rgba(51, 65, 85, 0.1)',      // Slate darker
 ];
 
 export default function FloatingParticles() {
@@ -27,17 +26,17 @@ export default function FloatingParticles() {
   useEffect(() => {
     const generateParticles = () => {
       const newParticles: Particle[] = [];
-      const particleCount = Math.min(15, Math.floor(window.innerWidth / 100));
+      const particleCount = Math.min(8, Math.floor(window.innerWidth / 200));
 
       for (let i = 0; i < particleCount; i++) {
         newParticles.push({
           id: i,
           x: Math.random() * window.innerWidth,
           y: Math.random() * window.innerHeight,
-          size: Math.random() * 4 + 1,
-          speedX: (Math.random() - 0.5) * 0.5,
-          speedY: (Math.random() - 0.5) * 0.5,
-          opacity: Math.random() * 0.5 + 0.3,
+          size: Math.random() * 2 + 1,
+          speedX: (Math.random() - 0.5) * 0.2,
+          speedY: (Math.random() - 0.5) * 0.2,
+          opacity: Math.random() * 0.3 + 0.1,
           color: colors[Math.floor(Math.random() * colors.length)],
         });
       }
@@ -52,12 +51,12 @@ export default function FloatingParticles() {
           ...particle,
           x: particle.x + particle.speedX,
           y: particle.y + particle.speedY,
-          opacity: particle.opacity + (Math.random() - 0.5) * 0.1,
+          opacity: particle.opacity + (Math.random() - 0.5) * 0.05,
         }))
       );
     };
 
-    const interval = setInterval(animateParticles, 50);
+    const interval = setInterval(animateParticles, 100);
 
     const handleResize = () => {
       generateParticles();
@@ -83,10 +82,10 @@ export default function FloatingParticles() {
             width: `${particle.size}px`,
             height: `${particle.size}px`,
             backgroundColor: particle.color,
-            opacity: Math.max(0.1, Math.min(1, particle.opacity)),
-            filter: 'blur(0.5px)',
-            animation: `float ${6 + Math.random() * 4}s ease-in-out infinite`,
-            animationDelay: `${Math.random() * 2}s`,
+            opacity: Math.max(0.05, Math.min(0.4, particle.opacity)),
+            filter: 'blur(1px)',
+            animation: `float ${8 + Math.random() * 4}s ease-in-out infinite`,
+            animationDelay: `${Math.random() * 3}s`,
           }}
         />
       ))}

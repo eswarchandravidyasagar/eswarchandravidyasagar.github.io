@@ -6,12 +6,12 @@ interface ProjectCardProps {
 }
 
 const categoryColors = {
-  web: 'from-blue-500/20 to-cyan-500/20 text-blue-300 border-blue-500/30',
-  data: 'from-green-500/20 to-emerald-500/20 text-green-300 border-green-500/30',
-  ai: 'from-purple-500/20 to-pink-500/20 text-purple-300 border-purple-500/30',
-  fullstack: 'from-orange-500/20 to-red-500/20 text-orange-300 border-orange-500/30',
-  mobile: 'from-pink-500/20 to-rose-500/20 text-pink-300 border-pink-500/30',
-  utility: 'from-yellow-500/20 to-amber-500/20 text-yellow-300 border-yellow-500/30',
+  web: 'from-blue-600/15 to-cyan-600/15 text-blue-200 border-blue-600/25',
+  data: 'from-green-600/15 to-emerald-600/15 text-green-200 border-green-600/25',
+  ai: 'from-purple-600/15 to-pink-600/15 text-purple-200 border-purple-600/25',
+  fullstack: 'from-orange-600/15 to-red-600/15 text-orange-200 border-orange-600/25',
+  mobile: 'from-pink-600/15 to-rose-600/15 text-pink-200 border-pink-600/25',
+  utility: 'from-yellow-600/15 to-amber-600/15 text-yellow-200 border-yellow-600/25',
 };
 
 const categoryIcons = {
@@ -63,15 +63,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <span className="text-xs font-medium capitalize">{project.category}</span>
         </div>
         {project.featured && (
-          <div className="flex items-center gap-1 px-2 py-1 bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-full">
-            <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-pulse" />
-            <span className="text-xs text-purple-300 font-medium">Featured</span>
+          <div className="flex items-center gap-1 px-2 py-1 bg-gradient-to-r from-slate-600/20 to-slate-500/20 border border-slate-500/30 rounded-full">
+            <div className="w-2 h-2 bg-gradient-to-r from-slate-400 to-slate-300 rounded-full animate-pulse" />
+            <span className="text-xs text-slate-300 font-medium">Featured</span>
           </div>
         )}
       </div>
 
       {/* Project Title */}
-      <h3 className="text-xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-400 group-hover:to-purple-400 transition-all duration-300">
+      <h3 className="text-xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-slate-300 group-hover:to-slate-400 transition-all duration-300">
         {project.title}
       </h3>
       
@@ -103,7 +103,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           href={project.githubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 text-indigo-300 hover:from-indigo-500/30 hover:to-purple-500/30 hover:border-indigo-400/50 hover:text-indigo-200 transition-all duration-300 group/btn"
+          className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-slate-600/20 to-slate-700/20 border border-slate-500/30 text-slate-300 hover:from-slate-600/30 hover:to-slate-700/30 hover:border-slate-400/50 hover:text-slate-200 transition-all duration-300 group/btn"
         >
           <svg className="w-4 h-4 group-hover/btn:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
             <path fillRule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clipRule="evenodd" />
@@ -115,7 +115,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             href={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border border-emerald-500/30 text-emerald-300 hover:from-emerald-500/30 hover:to-teal-500/30 hover:border-emerald-400/50 hover:text-emerald-200 transition-all duration-300 group/btn"
+            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-emerald-600/20 to-teal-600/20 border border-emerald-600/30 text-emerald-200 hover:from-emerald-600/30 hover:to-teal-600/30 hover:border-emerald-500/50 hover:text-emerald-100 transition-all duration-300 group/btn"
           >
             <svg className="w-4 h-4 group-hover/btn:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -126,7 +126,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       </div>
 
       {/* Hover Effect Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-600/5 to-slate-700/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
     </div>
   );
 }

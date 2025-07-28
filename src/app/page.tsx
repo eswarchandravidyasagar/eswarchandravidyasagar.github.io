@@ -21,9 +21,9 @@ export default function Home() {
           <div className="text-center max-w-4xl mx-auto">
             {/* Animated Background Elements */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <div className="w-96 h-96 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 rounded-full blur-3xl floating" />
-              <div className="w-64 h-64 bg-gradient-to-r from-pink-500/10 to-rose-500/10 rounded-full blur-3xl floating-delay-1 absolute top-20 right-20" />
-              <div className="w-80 h-80 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-full blur-3xl floating-delay-2 absolute bottom-20 left-20" />
+              <div className="w-64 h-64 bg-gradient-to-r from-slate-600/5 to-slate-500/5 rounded-full blur-3xl floating" />
+              <div className="w-48 h-48 bg-gradient-to-r from-slate-500/5 to-slate-400/5 rounded-full blur-3xl floating-delay-1 absolute top-20 right-20" />
+              <div className="w-56 h-56 bg-gradient-to-r from-slate-700/5 to-slate-600/5 rounded-full blur-3xl floating-delay-2 absolute bottom-20 left-20" />
             </div>
             
             {/* Main Content */}
@@ -58,13 +58,13 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button 
                   onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-8 py-4 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold rounded-xl hover:from-indigo-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 glass-hover"
+                  className="px-8 py-4 bg-gradient-to-r from-slate-600 to-slate-700 text-white font-semibold rounded-xl hover:from-slate-500 hover:to-slate-600 transition-all duration-300 transform hover:scale-105"
                 >
                   View My Work
                 </button>
                 <button 
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-8 py-4 glass text-white font-semibold rounded-xl border border-white/20 hover:bg-white/10 transition-all duration-300"
+                  className="px-8 py-4 glass text-white font-semibold rounded-xl border border-slate-500/30 hover:bg-slate-600/20 transition-all duration-300"
                 >
                   Get In Touch
                 </button>
@@ -80,7 +80,7 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                 About <span className="text-gradient">Me</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto rounded-full" />
+              <div className="w-24 h-1 bg-gradient-to-r from-slate-500 to-slate-600 mx-auto rounded-full" />
             </div>
             
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -138,7 +138,7 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                 Featured <span className="text-gradient">Projects</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto rounded-full mb-8" />
+              <div className="w-24 h-1 bg-gradient-to-r from-slate-500 to-slate-600 mx-auto rounded-full mb-8" />
               <p className="text-slate-300 text-lg max-w-2xl mx-auto">
                 A showcase of my most impactful work, featuring cutting-edge technologies and innovative solutions
               </p>
@@ -165,7 +165,7 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                 All <span className="text-gradient">Projects</span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto rounded-full mb-8" />
+              <div className="w-24 h-1 bg-gradient-to-r from-slate-500 to-slate-600 mx-auto rounded-full mb-8" />
               <p className="text-slate-300 text-lg max-w-2xl mx-auto">
                 Explore my complete portfolio of projects, from data analysis to full-stack applications
               </p>
@@ -181,7 +181,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Get In <span className="text-gradient">Touch</span>
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto rounded-full mb-12" />
+            <div className="w-24 h-1 bg-gradient-to-r from-slate-500 to-slate-600 mx-auto rounded-full mb-12" />
             
             <p className="text-slate-300 text-lg mb-12 max-w-2xl mx-auto">
               Let&apos;s collaborate on your next project or discuss how we can work together to bring your ideas to life.
@@ -189,7 +189,7 @@ export default function Home() {
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
               <a 
-                href="mailto:your.email@example.com" 
+                href="mailto:eswarchandravidyasagar@gmail.com" 
                 className="glass px-8 py-4 rounded-xl border border-white/20 text-white hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2 group"
               >
                 <svg className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -209,7 +209,7 @@ export default function Home() {
                 GitHub
               </a>
               <a 
-                href="https://linkedin.com/in/yourprofile" 
+                href="https://linkedin.com/in/eswarchandravidyasagar" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass px-8 py-4 rounded-xl border border-white/20 text-white hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2 group"
