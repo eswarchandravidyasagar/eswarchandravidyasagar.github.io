@@ -52,7 +52,6 @@ export const projects: Project[] = [
     description: 'Interactive BMI calculator web application with modern UI and health recommendations.',
     technologies: ['JavaScript', 'HTML', 'CSS'],
     githubUrl: 'https://github.com/eswarchandravidyasagar/BMI-calculator',
-    liveUrl: 'https://bmi-calculator-zeta-red.vercel.app',
     category: 'web'
   },
   {
