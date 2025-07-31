@@ -171,7 +171,7 @@ export default function Home() {
               </p>
             </div>
             
-            <ProjectsGrid projects={projects.filter(p => !p.featured)} showFilters={true} />
+            <ProjectsGrid projects={projects} showFilters={true} />
           </div>
         </section>
 
@@ -189,7 +189,7 @@ export default function Home() {
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
               <a 
-                href="mailto:your.email@example.com" 
+                href="mailto:eswarchandravidyasagar@gmail.com" 
                 className="glass px-8 py-4 rounded-xl border border-white/20 text-white hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2 group"
               >
                 <svg className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -209,7 +209,7 @@ export default function Home() {
                 GitHub
               </a>
               <a 
-                href="https://linkedin.com/in/yourprofile" 
+                href="https://linkedin.com/in/eswarchandravidyasagar" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass px-8 py-4 rounded-xl border border-white/20 text-white hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2 group"

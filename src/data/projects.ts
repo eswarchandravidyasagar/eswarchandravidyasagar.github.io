@@ -95,8 +95,8 @@ export const projects: Project[] = [
     title: 'Movie Zone',
     description: 'Movie discovery and rating platform with search functionality and user ratings.',
     technologies: ['CSS', 'JavaScript', 'API'],
-    githubUrl: 'https://github.com/eswarchandravidyasagar/moveizone',
-    liveUrl: 'https://eswarchandravidyasagar.github.io/moveizone',
+    githubUrl: 'https://github.com/eswarchandravidyasagar/moviezone',
+    liveUrl: 'https://eswarchandravidyasagar.github.io/moviezone',
     category: 'web'
   },
   {

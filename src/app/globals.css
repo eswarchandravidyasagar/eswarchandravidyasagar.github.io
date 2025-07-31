@@ -209,6 +209,32 @@ body {
   }
 }
 
+/* Line Clamp Utility */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Enhanced Project Card Hover Effects */
+.project-card:hover .project-title {
+  transform: translateY(-2px);
+}
+
+.project-card:hover .project-description {
+  color: rgba(226, 232, 240, 0.9);
+}
+
+/* Button Hover Improvements */
+.project-card .group\/btn:hover {
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+}
+
+.project-card .group\/btn:active {
+  transform: scale(0.95) !important;
+}
+
 /* Loading Animation */
 .loading-dots {
   display: inline-block;
