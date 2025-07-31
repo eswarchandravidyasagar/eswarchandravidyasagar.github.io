@@ -148,6 +148,15 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/eswarchandravidyasagar/Newscorekeeper',
     liveUrl: 'https://eswarchandravidyasagar.github.io/Newscorekeeper',
     category: 'utility'
+  },
+  {
+    id: 'crewai-research-assistant',
+    title: 'CrewAI Research Assistant',
+    description: 'A powerful Streamlit application that leverages CrewAI\'s multi-agent framework to create an intelligent research assistant with web search, file analysis, and code execution capabilities.',
+    technologies: ['Python', 'Streamlit', 'CrewAI', 'OpenAI', 'Multi-Agent AI'],
+    githubUrl: 'https://github.com/eswarchandravidyasagar/data-science',
+    category: 'data',
+    featured: true
   }
 ];
 
