@@ -11,6 +11,15 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: 'automata-agent',
+    title: 'Automata Agent',
+    description: 'AI-powered agent (Aura) capable of understanding natural language goals, interacting with websites using Playwright, and automating complex data extraction workflows. Features self-healing execution and data export capabilities.',
+    technologies: ['TypeScript', 'Next.js', 'Playwright', 'AI', 'GitHub Models'],
+    githubUrl: 'https://github.com/eswarchandravidyasagar/automata-agent',
+    category: 'ai',
+    featured: true
+  },
+  {
     id: 'kfp-doctor',
     title: 'KFP Doctor',
     description: 'Kubeflow Pipelines diagnostic and troubleshooting tool for ML workflows. Helps identify and resolve common pipeline issues.',
