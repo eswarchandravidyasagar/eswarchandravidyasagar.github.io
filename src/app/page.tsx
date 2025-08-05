@@ -45,7 +45,7 @@ export default function Home() {
                   <div className="text-sm text-slate-400">Repositories</div>
                 </div>
                 <div className="glass rounded-xl px-6 py-4 border border-white/20">
-                  <div className="text-2xl font-bold text-white">16</div>
+                  <div className="text-2xl font-bold text-white">6</div>
                   <div className="text-sm text-slate-400">Featured Projects</div>
                 </div>
                 <div className="glass rounded-xl px-6 py-4 border border-white/20">
