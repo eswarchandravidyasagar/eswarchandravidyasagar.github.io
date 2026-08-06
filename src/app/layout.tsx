@@ -1,16 +1,23 @@
 import type { Metadata } from "next";
+import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 
-// Temporarily comment out Google Fonts due to network issues
-// import { Inter } from "next/font/google";
-// const inter = Inter({
-//   subsets: ["latin"],
-//   variable: "--font-inter",
-// });
+const plexSans = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-plex-sans",
+});
+
+const plexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-plex-mono",
+});
 
 export const metadata: Metadata = {
-  title: "Eswar Chandra - Full Stack Developer & AI Enthusiast",
-  description: "Portfolio of Eswar Chandra - Full Stack Developer specializing in modern web technologies and AI projects.",
+  title: "Eswar Attuluri — Data Engineer & AI",
+  description:
+    "Portfolio of Eswar Attuluri — Data Engineer & AI Enthusiast building quiet tools for complex systems.",
 };
 
 export default function RootLayout({
@@ -19,10 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className="font-sans antialiased"
-      >
+    <html lang="en" className="bg-white">
+      <body className={`${plexSans.variable} ${plexMono.variable} min-h-screen bg-white font-sans antialiased`}>
         {children}
       </body>
     </html>
